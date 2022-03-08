@@ -129,6 +129,11 @@ sendFunction() {
 ; Label
 ;*****************************************************************************************************************************************
 
+PL_LIVGuiClose:
+PL_LIVGuiEscape:
+    ExitApp
+Return
+
 PBSend:
     sendFunction()
 Return
