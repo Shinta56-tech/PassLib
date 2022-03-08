@@ -58,7 +58,7 @@ initPassLib() {
 }
 
 initPassLib:
-    Global INI_PassLib := "ini\PassLib.ini"
+    Global INI_PassLib := "PassLib.ini"
 
     Global iPasss, PSearch
     Global gPLv, gEditKey, gEditValue, gPBOkAdd, gPBOkUpd
@@ -122,6 +122,7 @@ sendFunction() {
         LV_GetText(RowText, SelectedRow, 2)
         Send, % RowText
     }
+    ExitApp
 }
 
 ;*****************************************************************************************************************************************
